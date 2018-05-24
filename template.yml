@@ -41,3 +41,25 @@ Resources:
           Properties:
             Path: /
             Method: post
+  Api:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: index.handler
+      Runtime: nodejs4.3
+      Environment:
+        Variables:
+          NODE_ENV: production
+      Role:
+        Fn::ImportValue:
+          !Join ['-', [!Ref 'ProjectId', !Ref 'AWS::Region', 'LambdaTrustRole']]
+      Events:
+        GetEvent:
+          Type: Api
+          Properties:
+            Path: /api/hello
+            Method: get
+        PostEvent:
+          Type: Api
+          Properties:
+            Path: /api/hello
+            Method: post

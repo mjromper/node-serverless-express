@@ -1,13 +1,18 @@
 var express = require('express');
+var path = require("path");
 var app = express();
 
-app.get('/', function(req, res) {
+const root = './client';
+
+app.use(express.static( path.resolve(__dirname, root)));
+
+app.get('/api/hello', function(req, res) {
   res.send({
     "Output": "Hello World!"
   });
 });
 
-app.post('/', function(req, res) {
+app.post('/api/hello', function(req, res) {
   res.send({
     "Output": "Hello World!"
   });

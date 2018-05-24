@@ -41,7 +41,7 @@ Resources:
           Properties:
             Path: /
             Method: post
-  Api:
+  BAM_Api:
     Type: AWS::Serverless::Function
     Properties:
       Handler: index.handler
@@ -56,10 +56,10 @@ Resources:
         GetEvent:
           Type: Api
           Properties:
-            Path: /api/hello
+            Path: /api/*
             Method: get
         PostEvent:
           Type: Api
           Properties:
-            Path: /api/hello
+            Path: /api/*
             Method: post

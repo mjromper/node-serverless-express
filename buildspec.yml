@@ -4,8 +4,9 @@ phases:
   install:
     commands:
       # Install dependencies needed for running tests
+      - npm install -g bower
       - npm install
-
+      - bower install --allow-root
       # Upgrade AWS CLI to the latest version
       - pip install --upgrade awscli
   pre_build:

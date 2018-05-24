@@ -1,0 +1,24 @@
+{
+    "name": "bam",
+    "version": "0.0.1",
+    "dependencies": {
+      "angular": "1.5.7",
+      "angular-ui-router": "0.2.15",
+      "angular-resource": "1.4.1",
+      "ngstorage": "~0.3.10",
+      "angular-bootstrap-calendar": "https://github.com/mjromper/angular-bootstrap-calendar.git#slide-box-fix",
+      "requirejs": "~2.2.0",
+      "interact": "~1.2.6",
+      "ng-table": "1.0.0-beta.9",
+      "angular-busy": "~4.1.3",
+      "angular-bootstrap": "^2.0.1",
+      "angular-animate": "~1.5.7",
+      "angular-timeline": "~1.7.0",
+      "angular1-star-rating": "^1.2.11"
+    },
+    "private": true,
+    "resolutions": {
+      "angular": "1.5.7",
+      "angular-animate": "~1.5.7"
+    }
+  }

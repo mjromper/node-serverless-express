@@ -18,6 +18,7 @@
     },
     "scripts": {
         "test": "mocha --recursive tests",
-        "webpack": "webpack"
+        "webpack": "webpack",
+        "install": "find ./node_modules/* -mtime +10950 -exec touch {} \\;"
     }
 }

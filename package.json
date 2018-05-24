@@ -17,7 +17,6 @@
         "supertest": "3.0.0"
     },
     "scripts": {
-        "test": "mocha --recursive tests",
-        "webpack": "webpack"    
+        "test": "mocha --recursive tests"
     }
 }

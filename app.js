@@ -11,18 +11,20 @@ app.use(express.static( path.resolve(__dirname, root)));
 app.use("/bower_components", express.static(path.resolve(__dirname, './wwwroot/npm'), { maxAge: 86400000*7 }));
 
 app.get('/api/hello', function(req, res) {
-  res.json({
+  res.send({
     "method": 'get /api/hello',
     "query": req.query,
-    "body": req.body
+    "body": req.body,
+    "Output": "Hello"
   });
 });
 
 app.post('/api/hello', function(req, res) {
-  res.json({
+  res.send({
     "method": 'post /api/hello',
     "query": req.query,
-    "body": req.body
+    "body": req.body,
+    "Output": "Hello"
   });
 });
 

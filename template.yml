@@ -56,10 +56,10 @@ Resources:
         GetEvent:
           Type: Api
           Properties:
-            Path: /api/*
+            Path: /api/{resourceId}
             Method: get
         PostEvent:
           Type: Api
           Properties:
-            Path: /api/*
+            Path: /api/{resourceId}
             Method: post
